@@ -1,0 +1,64 @@
+{
+  "vagas": [
+    {
+      "id": "1",
+      "nome": "Desenvolver FrontEnd Jr",
+      "foto": "foto1.jpg",
+      "descricao": "Trabalhar com HTML, CSS e JS",
+      "salario": 5000
+    },
+    {
+      "id": "2",
+      "nome": "Desenvolver BackEnd Pleno",
+      "foto": "foto2.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 9000
+    },
+    {
+      "id": "3",
+      "nome": "Desenvolver Fullstack Senior",
+      "foto": "foto3.jpg",
+      "descricao": "Trabalhar com Desenvolvimento Web",
+      "salario": 18000
+    },
+    {
+      "id": "3dKY8LtMq2E",
+      "nome": "fncs",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwBVEyMSvFQURAy_fuef0OiF6WSy4YE7J7RttWZx1jJw&s=10",
+      "descricao": "Terror intenso",
+      "salario": 0
+    },
+    {
+      "id": "P7w756Qfcuw",
+      "nome": "Engenheiro de software",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGe3fgsX6v8hCi0e9TQSo52jB7jGG6ozv_belgmeLz6KyesypLLB-3D5M&s=10",
+      "descricao": "oi",
+      "salario": 0
+    }
+  ],
+  "curriculos": [
+    {
+      "id": "1",
+      "nome": "Pedro Bosso",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQTtVtTfrtEYSKrr24bCSnq8_kN1H0LG-1kxsnKpN-ww&s=10",
+      "descricao": "Desenvolvedor Front-End",
+      "experiencia": "1 ano de experiência em Angular",
+      "formacao": "Técnico em Desenvolvimento de Sistemas",
+      "email": "pedro@email.com",
+      "telefone": "(19) 99999-9999",
+      "github": "https://github.com/pedro"
+    },
+    {
+      "id": "G7NTG3rBV94",
+      "nome": "Isabela",
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIjVsSFdcgu005y63I744MA4ZB9fzTRumyDmGOFA5lMw&s=10",
+      "descricao": "Estudante dedicada e apaixonada pela área da saúde, com o firme propósito de me tornar médica. Busco constantemente expandir meus conhecimentos em biologia, anatomia e cuidados humanos. Destaco-me pela facilidade de comunicação, empatia no trato com as pessoas e resiliência diante de desafios acadêmicos. Meu objetivo é contribuir positivamente em projetos da área da saúde, adquirindo experiência prática e humanizada enquanto trilho meu caminho rumo à medicina.",
+      "experiencia": "Voluntariado em Apoio Hospitalar / Ações Sociais (Período: 6 meses)\n\nAuxílio no acolhimento de pacientes e organização de fluxos de atendimento.\n\nDesenvolvimento de escuta ativa e empatia no suporte a pessoas em momentos de vulnerabilidade.\n\nParticipação em Feiras de Ciências e Olimpíadas Acadêmicas\n\nDesenvolvimento de projetos focados em saúde pública e funcionamento do corpo humano.",
+      "formacao": "Ensino Médio Completo.  Foco em Ciências da Natureza e Biologia.  Cursos Extracurriculares (Online):  Introdução à Anatomia Humana, Primeiros Socorros Básicos e Humanização no Atendimento de Saúde.",
+      "email": "isa@gmail.com",
+      "telefone": "(11) 99999-1234",
+      "linkedin": "https://www.linkedin.com/"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

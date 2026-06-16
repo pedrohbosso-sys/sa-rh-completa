@@ -1,0 +1,146 @@
+$primaria: #0000ff;
+$secundaria: #999;
+$sucesso: #00ff00;
+$alerta: #ff0000;
+$aviso: #ffff00;
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  color: #555;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba($color: #000000, $alpha: 0.1);
+
+  label {
+    display: block;
+    margin-bottom: .5rem;
+    color: #333;
+    font-size: 1rem;
+  }
+
+  input,
+  textarea {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+      border-color: $primaria;
+      box-shadow: 0 4px 16px rgba($color: #000000, $alpha: 0.1);
+    }
+  }
+
+  textarea {
+    min-height: 90px;
+    resize: vertical;
+  }
+
+  button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 1rem;
+
+    &[type="button"]:nth-of-type(1) {
+      background-color: $secundaria;
+
+      &:hover {
+        background-color: darken($sucesso, 10%);
+      }
+    }
+
+    &[type="button"]:nth-of-type(2) {
+      background-color: $secundaria;
+
+      &:hover {
+        background-color: darken($aviso, 10%);
+      }
+    }
+  }
+}
+
+.cards {
+  max-width: 1300px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card {
+  width: 220px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: .3s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+  }
+
+  .acoes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  button {
+    border: none;
+    background-color: $secundaria;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+  }
+  
+
+  .abrir:hover {
+    background-color: darken($aviso, 10%);
+  }
+
+  .excluir:hover {
+    background-color: darken($alerta, 10%);
+  }
+}
+
+.footer {
+  height: 8vh;
+}

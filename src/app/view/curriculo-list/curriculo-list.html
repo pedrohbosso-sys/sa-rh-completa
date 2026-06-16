@@ -1,0 +1,46 @@
+<h1>Lista de Currículos</h1>
+
+
+
+<div class="listar-curriculos">
+  @for (curriculo of curriculos; track curriculo.id) {
+
+    <div class="listar-curriculo">
+
+      <img [src]="curriculo.foto" [alt]="curriculo.nome">
+
+      <div class="card-body">
+
+        <h5 class="card-title">{{ curriculo.nome }}</h5>
+
+        <p class="card-text">
+          <strong>Descrição:</strong> {{ curriculo.descricao }}
+        </p>
+
+        <p class="card-text">
+          <strong>Experiência:</strong> {{ curriculo.experiencia }}
+        </p>
+
+        <p class="card-text">
+          <strong>Formação:</strong> {{ curriculo.formacao }}
+        </p>
+
+        <p class="card-text">
+          <strong>Email:</strong> {{ curriculo.email }}
+        </p>
+
+        <p class="card-text">
+          <strong>Telefone:</strong> {{ curriculo.telefone }}
+        </p>
+
+        <p class="card-text">
+          <strong>linkedin:</strong> {{ curriculo.linkedin }}
+        </p>
+
+
+      </div>
+
+    </div>
+
+  }
+</div>

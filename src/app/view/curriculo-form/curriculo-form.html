@@ -1,0 +1,75 @@
+<h2>{{ modoEdicao ? 'Editar Currículo' : 'Cadastrar Currículo' }}</h2>
+
+<form>
+
+  <label>Nome</label>
+  <input type="text" [(ngModel)]="curriculo.nome" name="nome">
+  <br>
+
+  <label>Foto</label>
+  <input type="text" [(ngModel)]="curriculo.foto" name="foto">
+  <br>
+
+  <label>Descrição</label>
+  <textarea [(ngModel)]="curriculo.descricao" name="descricao"></textarea>
+  <br>
+
+  <label>Experiência</label>
+  <textarea [(ngModel)]="curriculo.experiencia" name="experiencia"></textarea>
+  <br>
+
+  <label>Formação</label>
+  <input type="text" [(ngModel)]="curriculo.formacao" name="formacao">
+  <br>
+
+  <label>Email</label>
+  <input type="email" [(ngModel)]="curriculo.email" name="email">
+  <br>
+
+  <label>Telefone</label>
+  <input type="text" [(ngModel)]="curriculo.telefone" name="telefone">
+  <br>
+
+  <label>linkedin</label>
+  <input type="text" [(ngModel)]="curriculo.linkedin" name="github">
+  <br>
+
+  <button type="button"
+    (click)="modoEdicao ? atualizarCurriculo() : cadastrarCurriculo()">
+    {{ modoEdicao ? 'Atualizar Currículo' : 'Cadastrar Currículo' }}
+  </button>
+
+</form>
+
+<hr>
+
+<h2>Currículos Cadastrados</h2>
+<div class="cards">
+
+  @for (item of curriculos; track item.id) {
+
+    <div class="card">
+
+      <img [src]="item.foto" alt="Foto">
+
+      <h3>{{ item.nome }}</h3>
+
+      <p>{{ item.formacao }}</p>
+
+      <p>{{ item.email }}</p>
+
+      <div class="acoes">
+        <button style="background-color: blue;" (click)="abrirCurriculo(item)">
+          Abrir
+        </button>
+
+        <button style="background-color: red;" (click)="excluirCurriculo(item.id)">
+          Excluir
+        </button>
+      </div>
+
+    </div>
+
+  }
+
+</div>
